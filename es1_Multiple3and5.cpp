@@ -5,10 +5,13 @@
 
 // Find the sum of all the multiples of 3 or 5 below 1000.
 
-#include<iostream>
-#include <cstlib>
+#include <iostream>
 
 using namespace std;
+
+bool is_multiple_of_three_or_five(int i){
+    return  i%3 == 0 or i%5 == 0;
+}
 
 int main(){
     int sum_multiple_three_or_five = 0;
@@ -21,8 +24,4 @@ int main(){
     cout << sum_multiple_three_or_five << endl;
 
     return 0;
-}
-
-bool is_multiple_of_three_or_five(int i){
-    return  i%3 == 0 or i%5 == 0;
 }
