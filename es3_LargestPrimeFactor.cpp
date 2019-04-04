@@ -9,10 +9,10 @@ int main(){
     unsigned long int num = 600851475143;
 
     long max_prime_factor = 0;
-    for (long i=2; i<=num; i++){
-        while(num %i == 0){
-            num = num/i;
-            max_prime_factor = i;
+    for (long factor=2; factor<=num; factor++){
+        while(num % factor== 0){
+            num = num/factor;
+            max_prime_factor = factor;
         }
     }
     cout << max_prime_factor <<endl;
